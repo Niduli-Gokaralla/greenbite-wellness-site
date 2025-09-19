@@ -1,0 +1,115 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;             /* white background */
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd; /* subtle line under navbar */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* NAVBAR LINKS */
+.navbar {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none; /* remove bullets */
+}
+
+.navbar li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s, background 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: #27ae60; /* green highlight on hover/active */
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: #fff;
+        width: 200px;
+        text-align: right;
+        padding: 20px;
+        transition: right 0.3s ease-in-out;
+        border: 1px solid #ddd;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar li a {
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    .navbar li a:hover {
+        color: #27ae60;
+    }
+}

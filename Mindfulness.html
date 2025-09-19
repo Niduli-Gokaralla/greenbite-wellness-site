@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindfulness | GreenBite</title>
+  <link rel="stylesheet" href="Mindfulness.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <a href="#" class="logo"><img src="images/Logo.png" alt="GreenBite Logo">GreenBite</a>
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="workout.html">Workouts</a></li>
+      <li><a href="Mindfulness.html">Mindfulness</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Breathing Section -->
+    <section class="card" aria-label="Guided Breathing">
+      <h2>Guided Breathing</h2>
+      <div class="circle" role="img" aria-label="Breathing animation"></div>
+      <p class="subtitle">Follow the rhythm: Inhale... Exhale...</p>
+    </section>
+
+    <!-- Timer Section -->
+    <section class="card" aria-label="Timer Tool">
+      <h2>Pomodoro Timer</h2>
+      <div class="timer" id="timer">25:00</div>
+      <div class="controls">
+        <button id="start-btn">▶ Start</button>
+        <button id="reset-btn">⟳ Reset</button>
+      </div>
+    </section>
+
+    <!-- Ambient Sounds -->
+    <section class="card" aria-label="Ambient Sounds">
+      <h2>Ambient Sounds</h2>
+      <div class="sounds">
+        <button data-sound="rain">🌧 Rain</button>
+        <button data-sound="forest">🌲 Forest</button>
+      </div>
+    </section>
+
+    <!-- Sessions Tracker -->
+    <section class="card" aria-label="Session Tracking">
+      <h2>Progress</h2>
+      <p id="sessions">Completed Sessions: 0</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left: Brand Info -->
+      <div class="footer-brand">
+        <h2>GreenBite</h2>
+        <p>Promoting healthy living through balanced meals, exercise, and mindfulness.</p>
+      </div>
+
+      <!-- Middle: Quick Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="Mindfulness.html">Mindfulness</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Newsletter -->
+      <div class="footer-newsletter">
+        <h3>Join Our Newsletter</h3>
+        <p>Get weekly tips and recipes directly to your inbox.</p>
+        <form id="newsletterForm">
+          <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletterMsg" class="newsletter-msg"></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 GreenBite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="Mindfulness.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
