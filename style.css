@@ -124,7 +124,7 @@ header .logo img {
   transition: background 0.3s;
 }
 
-.home-text a:hover {
+.home-text a: hover {
   background: #276749;
 }
 
@@ -214,13 +214,20 @@ header .logo img {
   margin-bottom: 1rem;
 }
 
-.footer-links a {
-  color: #fff;
-  transition: 0.3s;
+.footer-links h3 {
+    color: #1a2428; 
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-.footer-links a: hover {
-  text-decoration: underline;
+.footer-links ul li a {
+    color: #1a2428; 
+    text-decoration: none;
+}
+
+.footer-links ul li a: hover,
+.footer-links ul li a: focus {
+    color: #16b978; 
 }
 
 .footer-newsletter input {
@@ -295,3 +302,4 @@ html {
   }
 
 }
+
