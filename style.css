@@ -219,7 +219,7 @@ header .logo img {
   transition: 0.3s;
 }
 
-.footer-links a:hover {
+.footer-links a: hover {
   text-decoration: underline;
 }
 
@@ -233,7 +233,7 @@ header .logo img {
 .footer-newsletter button {
   padding: 0.7rem 1.5rem;
   background: #38a169;
-  color: #fff;
+  color: #000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -293,4 +293,5 @@ html {
   .home-img {
     margin-top: 2rem;
   }
+
 }
