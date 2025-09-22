@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 /* Variables */
-:root {
+: root {
   --main-color: #16b978;
   --green-color: #2f855a;
   --text-color: #1a2428;
@@ -215,13 +215,13 @@ header .logo img {
 }
 
 .footer-links h3 {
-    color: #1a2428; 
+    color: #FFFFFF; 
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
 .footer-links ul li a {
-    color: #1a2428; 
+    color: #FFFFFF; 
     text-decoration: none;
 }
 
@@ -302,4 +302,5 @@ html {
   }
 
 }
+
 
