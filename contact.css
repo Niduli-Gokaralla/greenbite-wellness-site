@@ -1,0 +1,182 @@
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Color Variables */
+:root {
+  --main-color: #2e7d32;      
+  --dark-green: #256728;           
+  --light-gray: #d3d3d3;         
+  --card-bg: #ffffff;            
+  --panel-bg: #f9f9f9;           
+  --panel-border: #2e7d32;     
+  --saved-feedback-bg: #f0f0f0;  
+  --btn-bg: #e8f5e9;   
+  --btn-hover: #c8e6c9; 
+}
+
+/* Body */
+body {
+  background: var(--light-gray);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Container */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Form Section */
+.form-section {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.8rem;
+  border: none;
+  background: var(--main-color);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--dark-green);
+}
+
+.hidden {
+  display: none;
+  margin-top: 1rem;
+  color: var(--main-color);
+}
+
+/* Map Section, FAQ Section, Saved Feedback */
+.map-section, .faq-section, .saved-feedback {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* FAQ Accordion */
+.accordion-btn {
+  background: var(--btn-bg);
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+  color: #222;
+}
+
+.accordion-btn:hover {
+  background: var(--btn-hover);
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: var(--panel-bg);
+  padding: 0 1rem;
+  border-left: 3px solid var(--panel-border);
+  margin-bottom: 0.5rem;
+}
+
+.panel p {
+  padding: 1rem 0;
+}
+
+/* Saved Feedback */
+.saved-feedback ul {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-left: 0;
+}
+
+.saved-feedback li {
+  background: var(--saved-feedback-bg);
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: url("images/contactbg.jpg") center/cover no-repeat;
+  height: 60vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.1); 
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}

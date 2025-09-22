@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Feedback - GreenBite</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <a href="#" class="logo"><img src="images/Logo.png" alt="">GreenBite</a>
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="navbar" id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="workout.html">Workouts</a></li>
+      <li><a href="Mindfulness.html">Mindfulness</a></li>
+      <li><a href="contact.html"class="home-active">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Contact & Feedback</h1>
+      <h2>We're here to listen and support your wellness journey</h2>
+    </div>
+  </section>
+
+  <main>
+    <!-- Contact Form -->
+    <section class="form-section" id="contact">
+      <h2><b>We'd love to hear from you</b></h2>
+      <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="confirmation" class="hidden">Thank you! Your feedback has been saved.</p>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+      <h2>GreenBite HQ</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.30232185715!2d79.8612435!3d6.9270786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2595d9e000001%3A0xabcdef1234567890!2sColombo!5e0!3m2!1sen!2slk!4v1694862345678"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <h2>FAQ</h2>
+      <div class="accordion">
+        <button class="accordion-btn">What is GreenBite?</button>
+        <div class="panel"><p>GreenBite is a wellness brand promoting healthy living through meals, exercise, and mindfulness.</p></div>
+
+        <button class="accordion-btn">Where are you located?</button>
+        <div class="panel"><p>Our HQ is based in Colombo, Sri Lanka.</p></div>
+
+        <button class="accordion-btn">How can I share feedback?</button>
+        <div class="panel"><p>Simply fill out the feedback form above and your response will be saved.</p></div>
+      </div>
+    </section>
+
+    <!-- Saved Feedback -->
+    <section class="saved-feedback">
+      <h2>Saved Feedback Entries</h2>
+      <ul id="feedbackList"></ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left: Brand Info -->
+      <div class="footer-brand">
+        <h2>GreenBite</h2>
+        <p>Promoting healthy living through balanced meals, exercise, and mindfulness.</p>
+      </div>
+
+      <!-- Middle: Quick Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a href="workout.html">Workouts</a></li>
+          <li><a href="Mindfulness.html">Mindfulness</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Newsletter -->
+      <div class="footer-newsletter">
+        <h3>Join Our Newsletter</h3>
+        <p>Get weekly tips and recipes directly to your inbox.</p>
+        <form id="newsletterForm">
+          <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletterMsg" class="newsletter-msg"></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 GreenBite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="contact.js"></script>
+  <script src="navbar.js"></script>
+</body>
+</html>
