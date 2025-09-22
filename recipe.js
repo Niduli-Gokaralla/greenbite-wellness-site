@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Avocado Toast",
       category: "breakfast",
-      image: "images/AvAcadoToast.jpg",
+      image: "images/AvacadoToast.jpg",
       description: "A quick, nourishing toast topped with creamy avocado,rich in healthy fats and fiber—perfect for breakfast or a light snack.",
       ingredients: ["1 slice whole-grain bread (toasted)",
                      "½ ripe avocado",
@@ -376,3 +376,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial display
   displayRecipes(recipes);
 });
+
